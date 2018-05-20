@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="แคมเปญลดโลกร้อน">
+  <meta name="keywords" content="แคมเปญ,ลด,โลกร้อน">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+<body>
+  <!-- Hero -->
+  <div class="container hero">
+    <h1>โปรโมทร้านของคุณ<br>ในแคมเปญลดโลกร้อนกันเถอะ!</h1>
+    <img src="./assets/img/leave-top-left.svg" alt="" class="leave-top-left">
+    <img src="./assets/img/leave-top-right.svg" alt="" class="leave-top-right">
+    <img src="./assets/img/leave-left.svg" alt="" class="leave-left">
+    <img src="./assets/img/leave-right.svg" alt="" class="leave-right">
+    <!-- Down Button -->
+    <a href="#second"><img src="./assets/img/down-button.svg" alt="" class="down-button"></a>
+  </div>
+  <div class="main-container">
+    <!-- Page Two -->
+
+    <div class="container second-page" id="second">
+      <h1 class="text-center">ขั้นตอนง่าย ๆ</h1>
+      <div class="white-text-box">
+        <div>๑</div>
+        <h1>เข้าร่วมแคมเปญ</h1>
+        <p>กรอกข้อมูล/ตรวจสอบคุณสมบัติ</p>
+      </div>
+      <div class="white-text-box">
+        <div>๒</div>
+        <h1>สิ่งที่ท่านจะได้รับจากแคมเปญนี้</h1>
+        <p>Badge จากเว็บของเรา เพิ่มความน่าสนใจ<br/>ให้ร้านของท่าน แชร์ผ่านFacebook</p>
+      </div>
+      <!-- Down Button -->
+      <a href="#third"><img src="./assets/img/down-button.svg" alt="" class="down-button"></a>
+    </div>
+
+    <!-- Page Three -->
+
+    <div class="container third-page" id="third">
+      <div>
+        <div>
+          <img src="./assets/img/person-icon.svg" alt="">
+          <h1 class="text-orange">คนเห็นเยอะขึ้น</h1>
+          <h3>จากการโปรโมทผ่านทางสื่อโซเชียล</h3>
+        </div>
+        <div>
+          <img src="./assets/img/bank-note.svg" alt="">
+          <h1 class="text-orange">รายได้เพิ่มขึ้น</h1>
+          <h3>จากการโปรโมทผ่านทางสื่อโซเชียล</h3>
+        </div>
+      </div>
+      <!-- Down Button -->
+      <a href="#fourth"><img src="./assets/img/down-button.svg" alt="" class="down-button"></a>
+    </div>
+
+    <!-- Page Four -->
+
+    <div class="container centered fourth-page" id="fourth">
+      <div>
+        <h1>รายละเอียดแคมเปญ</h1>
+        <p>ทรัพยากรธรรมชาติเป็นสิ่งจำเป็นในการดำรงชีวิตของมนุษย์ ควรใช้เท่าที่มีความจำเป็นเพื่อให้มีทรัพยากรไว้ใช้ได้นานและเกิดประโยชน์อย่างคุ้มค่ามากที่สุดแคมเปญนี้จึงชวนร้านค้าออนไลน์ร่วมกันรณรงค์และโปรโมทร้านในเวลาเดียวกันภายใต้แคมเปญร้านดีลดโลกร้อน</p>
+      </div>
+      <div class="joining">
+        <h1>โอกาสแบบ<br>นี้พลาดไม่ได้แล้ว</h1>
+        <a href="#fifth" class="button green-button">เริ่ม</a>
+      </div>
+    </div>
+
+    <!-- Page Five -->
+
+    <div class="container centered fifth-page" id="fifth">
+      <img src="./assets/img/transit.svg" alt="" class="page-image">
+      <h1>คุณเดินทางไปส่งของด้วย<br/>วิธีใดเป็นหลัก?</h1>
+      <a href="#sixth" class="button" onclick="typeSelect(1)">รถส่วนตัว</a>
+      <a href="#eighth" class="button" onclick="typeSelect(2)">ขนส่งมวลชน</a>
+      <a href="#eighth" class="button" onclick="typeSelect(3)">แท็กซี่</a>
+      <a href="#eighth" class="button" onclick="typeSelect(4)">มอเตอร์ไซค์</a>
+    </div>
+
+    <!-- Page Six -->
+
+    <div class="container centered six-page transport-hide" id="sixth">
+      <div>
+        <img src="./assets/img/clock.svg" alt="" class="page-image">
+        <h1>คุณขับรถเป็นระยะเวลากี่นาที?</h1>
+        <div class="slidecontainer">
+          <input type="range" min="10" max="80" value="1" class="slider" id="time">
+          <p><span id="timeValue" class="valuenumber">10</span></p>
+        </div>
+      </div>
+      <a href="#seventh" class="button next-button" onclick="durationAdd()">ถัดไป</a>
+    </div>
+
+    <!-- Page Seven -->
+
+    <div class="container centered seventh-page transport-hide" id="seventh">
+      <img src="./assets/img/fuel.svg" alt="" class="page-image">
+      <h1>เดือนนึงคุณเติมน้ำมันกี่ครั้ง?</h1>
+      <div class="plus-minus">
+        <span onclick="valueDecrement('fuelValue')">-</span>
+        <span id="fuelValue">1</span>
+        <span onclick="valueIncrement('fuelValue')">+</span>
+      </div>
+      <a href="#ninth" class="button next-button" onclick="fuelAdd()">ถัดไป</a>
+    </div>
+
+    <!-- Page Eight -->
+
+    <div class="container centered eight-page car-hide" id="eighth">
+      <div>
+        <img src="./assets/img/destination.svg" alt="" class="page-image">
+        <h1>คุณใช้ค่าเดินทางเท่าไหร่?</h1>
+        <div class="slidecontainer">
+          <input type="range" min="9" max="600" value="9" class="slider" id="fare">
+          <p><span id="fareValue" class="valuenumber">9</span></p>
+        </div>
+      </div>
+      <a href="#ninth" class="button next-button" onclick="fareAdd()">ถัดไป</a>
+    </div>
+
+    <!-- Page Nine -->
+
+    <div class="container centered nineth-page" id="ninth">
+      <img src="./assets/img/packaging.svg" alt="" class="page-image">
+      <h1>แพคเกจที่คุณใช้ส่งเป็นชนิดใด?</h1>
+      <button class="button" onclick="packageSelection = 1">ซองพลาสติก</button>
+      <button class="button" onclick="packageSelection = 2">ซองกระดาษ</button>
+      <button class="button" onclick="packageSelection = 3">กล่องกระดาษ</button>
+      <a href="#tenth" class="button next-button" onclick="packageAdd()">ถัดไป</a>
+    </div>
+
+    <!-- Page Ten -->
+
+    <div class="container centered tenth-page" id="tenth">
+      <img src="./assets/img/shipping.svg" alt="" class="page-image">
+      <h1>คุณส่งของกี่ชิ้นต่อครั้ง?</h1>
+      <div class="plus-minus">
+        <span onclick="valueDecrement('itemValue')">-</span>
+        <span id="itemValue">5</span>
+        <span onclick="valueIncrement('itemValue')">+</span>
+      </div>
+      <a href="#result-page" class="button next-button" onclick="shippingAdd()">ถัดไป</a>
+    </div>
+
+    <!-- Result -->
+
+    <div class="container centered result-page" id="result-page">
+      <!-- <div>
+        <div class="badge">
+          <div id="label">
+            ร้านค้าประหยัดพลังงาน
+          </div>
+          <img src="./assets/img/badge.svg" alt="" id="badge-img">
+        </div>
+        <p>
+          ร้านค้าของคุณนั้นได้ช่วยประหยัดพลังงาน
+        </p>
+        <ul>
+          <li>ส่งของเที่ยวละหลายๆชิ้น</li>
+          <li>ใช้แพคเกจที่สามารถนำกลับมาใช้ใหม่หรือย่อยสลายได้ง่าย</li>
+        </ul>
+      </div> -->
+      <img src="./assets/img/gold-badge-full.svg" id="badge-img" alt="">
+      <a href="./assets/img/gold-badge-full.svg" class="button" id="save-img" download>แชร์</a>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
