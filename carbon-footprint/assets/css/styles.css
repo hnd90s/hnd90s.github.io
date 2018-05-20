@@ -114,7 +114,7 @@ a{
   overflow: hidden;
   border-top: 1px solid rgba(255,255,255,.3);
   border-bottom: 1px solid rgba(255,255,255,.3);
-  max-height: 900px;
+  /* max-height: 900px; */
 }
 
 .container > div{
@@ -359,7 +359,7 @@ a{
   margin-bottom: 30px;
 }
 
-.nineth-page button{
+.nineth-page .button{
   margin-bottom: 30px;
   min-width: 180px;
   max-width: 180px;

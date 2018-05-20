@@ -84,7 +84,9 @@ function fareAdd() {
 
 var packageSelection = null;
 
-function packageAdd() {
+function packageAdd(input) {
+    packageSelection = input;
+    console.log('packageSelection: ', packageSelection);
   if(packageSelection === 1){
     totalScore+=3;
     console.log(totalScore);
