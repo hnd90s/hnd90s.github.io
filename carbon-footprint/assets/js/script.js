@@ -131,15 +131,15 @@ function calResult () {
   var saveImgButton = document.getElementById('save-img');
   if(totalScore >= 5 && totalScore <= 13){
     badgeImg.src = './assets/img/gold-badge-full.svg';
-    saveImgButton.href = './assets/img/gold-badge-full.svg';
+    saveImgButton.href = './assets/img/gold-badge-full.png';
     console.log('ก');
   } else if(totalScore >= 14 && totalScore <= 26){
     badgeImg.src = './assets/img/silver-badge-full.svg';
-    saveImgButton.href = './assets/img/silver-badge-full.svg';
+    saveImgButton.href = './assets/img/silver-badge-full.png';
     console.log('ข');
   } else if(totalScore >= 27 && totalScore <= 28){
     badgeImg.src = './assets/img/bronze-badge-full.svg';
-    saveImgButton.href = './assets/img/bronze-badge-full.svg';
+    saveImgButton.href = './assets/img/bronze-badge-full.png';
     console.log('ค');
   }
 }
